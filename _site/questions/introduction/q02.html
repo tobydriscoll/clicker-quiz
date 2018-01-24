@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<title>
+Derviative &middot; Clicker quizzes
+</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/assets/normalize.css">
+<link rel="stylesheet" href="/assets/main.css">
+
+<!-- Use $ for inline math and $$ for display math -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+</head>
+
+
+<body>
+
+<!-- Add any TeX macros you would like on every page. For details, see
+http://docs.mathjax.org/en/latest/tex.html#defining-tex-macros
+-->
+$$
+\newcommand{\dd}[2]{\frac{d #1}{d #2}}
+\newcommand{\reals}{\mathbb{R}}
+$$
+
+<script>
+function showText(show,hide)
+{
+    var x = document.getElementById(show);
+    x.className = x.className + " reveal";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+
+<div class="container question">
+  <h1>Derviative</h1>
+
+  <!-- The \dd macro is defined in /_includes/texmacros.md. -->
+
+<p>What is</p>
+
+<div class="kdmath">$$
+\dd{}{x}\left(e^x\right)?
+$$</div>
+
+<ol>
+  <li><em id="correct">$e^x$</em></li>
+  <li>$x$</li>
+  <li>$1$</li>
+  <li>$\ln(x)$</li>
+  <li>$\tan(x)$</li>
+</ol>
+
+</div>
+<div class="container">
+    <p><hr></p>
+    <p><a onclick="showText('correct','show_answer')" href="javascript:void(0);" id="show_answer">Show answer</a></p>
+    <p><a href="/">Home</a></p>    
+</div>

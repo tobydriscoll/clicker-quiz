@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+
+{% include texmacros.md %}
+
+<script>
+function showText(show,hide)
+{
+    var x = document.getElementById(show);
+    x.className = x.className + " reveal";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+
+<div class="container question">
+  <h1>{{page.title}}</h1>
+
+  {{ content }}
+</div>
+<div class="container">
+    <p><hr></p>
+    <p><a onclick="showText('correct','show_answer')" href="javascript:void(0);" id="show_answer">Show answer</a></p>
+    <p><a href="{{ site.baseurl }}/">Home</a></p>    
+</div>
