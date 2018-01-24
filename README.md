@@ -54,7 +54,7 @@ You can change, add, and remove chapters in this list. They will appear in this 
 
 ### Build and serve the site
 
-Once questions and the configuration are ready, [build and serve the website](https://jekyllrb.com/docs/usage/). The typical use case is to use Jekyll to serve the site and point your browser to `localhost:4000` to use it. However, you can post the site to any server you wish, of course. 
+Once questions and the configuration are ready, [build and serve the website](https://jekyllrb.com/docs/usage/). The typical use case is to use Jekyll to serve the site and point your browser to `localhost:4000/clicker-quiz` to use it. However, you can post the site to any server you wish, of course. 
 
 ## Customization
 

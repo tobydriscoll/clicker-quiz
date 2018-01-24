@@ -7,5 +7,5 @@ title: "Clicker questions index"
 ## {{chapter}}
   {% assign items = site.questions | where: "chapter", chapter %}
   {% for item in items %}
-  1. [{{item.title}}]({{item.url}}){% endfor %}
+  1. [{{item.title}}]({{item.url | relative_url}}){% endfor %}
 {% endfor %}
